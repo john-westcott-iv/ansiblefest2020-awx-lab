@@ -1,0 +1,8 @@
+---
+- name: This is our demo playbook
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+    - debug:
+        msg: "Running the {{ environment }} job"
