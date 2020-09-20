@@ -5,9 +5,9 @@
   gather_facts: False
   tasks:
     - debug:
-        msg: "Running the {{ environment }} job"
+        msg: "Running the {{ twr_env | default('Unknown') }} job"
 
     - debug:
-        msg: "This should run in Tower"
+        msg: "This is the end of my playbook"
       tags:
-        - cmd_line_only
+        - debug_messages
