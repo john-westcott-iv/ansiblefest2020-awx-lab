@@ -8,6 +8,6 @@
         msg: "Running the {{ twr_env | default('Unknown') }} job"
 
     - debug:
-        msg: "This should not run in Tower"
+        msg: "This is the end of my playbook"
       tags:
-        - cmd_line_only
+        - debug_messages
