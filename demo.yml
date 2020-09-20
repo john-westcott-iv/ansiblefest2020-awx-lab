@@ -6,3 +6,8 @@
   tasks:
     - debug:
         msg: "Running the {{ environment }} job"
+
+    - debug:
+        msg: "This should run in Tower"
+      tags:
+        - cmd_line_only
